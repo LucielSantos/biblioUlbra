@@ -4,7 +4,7 @@ LINK: https://github.com/heitor-gia/BiblioUlbra/blob/master/data/src/main/java/c
 # baseURL:
 http://www.ulbratorres.com.br/biblioUlbra/
 
-# Histórico de Livros Alugador pelo Usuário:
+# Histórico de Livros Alugados pelo Usuário:
 
 - Params: ?funcao=h&cgu=xxxxxxxx
 ```
