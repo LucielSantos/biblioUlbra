@@ -52,7 +52,7 @@ http://www.ulbratorres.com.br/biblioUlbra/
     }
 ```
 
-# Não sei a finalidade!
+# Renovar: 
 - Params: ?funcao=r&cgu=xxxxxxxxx
 ```
     return:
@@ -62,7 +62,7 @@ http://www.ulbratorres.com.br/biblioUlbra/
     }
 ```
 
-# Buscar Livros
+# Buscar Livros:
 - Params:
     - ## ?funcao=r *
     - ## busca='string' *
