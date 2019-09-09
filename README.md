@@ -20,6 +20,9 @@ http://www.ulbratorres.com.br/biblioUlbra/
         },
         ...
     ]
+
+    If not exists: 
+    []
 ```
 
 # Livros Alugados do Usuário no Momento:
@@ -37,6 +40,9 @@ http://www.ulbratorres.com.br/biblioUlbra/
         },
         ...
     ]
+
+    If not exists: 
+    []
 ```
 
 # Dados do Usuário:
@@ -50,8 +56,12 @@ http://www.ulbratorres.com.br/biblioUlbra/
         caixa: 'double',
         reservas: 'int'
     }
-```
 
+    If not exists: 
+    {
+        usuario: "falso"
+    }
+```
 # Renovar: 
 - Params: ?funcao=r&cgu=xxxxxxxxx
 ```
@@ -64,7 +74,7 @@ http://www.ulbratorres.com.br/biblioUlbra/
 
 # Buscar Livros:
 - Params:
-    - ## ?funcao=r *
+    - ## ?funcao=b *
     - ## busca='string' *
     - ## mater= 
 
@@ -143,9 +153,20 @@ http://www.ulbratorres.com.br/biblioUlbra/
         | "WTE" | "Nota Tese/Diss/Monog" |
         | "BAR" | "Código de Barras" |
 
+    - ## idioma=
+
+        | codigo | nome |
+        |--------|------|
+        | "" | "Todas" |
+        | "POR" | "Português" |
+        | "ENG" | "Inglês" |
+        | "GER" | "Alemão" |
+        | "SPA" | "Espanhol" |
+        | "FRE" | "Francês" |
+
     - ## cookie= 'string'
 
-    - ## pag= 'string'
+    - ## pag= int
 
     - ## return:
     
@@ -166,6 +187,11 @@ http://www.ulbratorres.com.br/biblioUlbra/
                 }
                 ...
             ]
+        }
+
+        If not exists: 
+        {
+            scalar: "pesquisa vazia"
         }
         ```
 
