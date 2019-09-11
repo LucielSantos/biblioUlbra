@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
+    SafeAreaView,
     View,
-    Text
+    Text,
+    ScrollView,
 } from 'react-native';
 
-export default function Home() {
-  return (
-    <View>
-        <Text>Home</Text>
-    </View>
-  );
+import { getHistory, getUser, getRantedBooks, getAllData } from '../../services/Api';
+
+import styles from './style';
+
+export default function Home({ navigation }) {
+
+    const data = navigation.getParam('data');
+
+    return (
+        <SafeAreaView style={ styles.areaView }>
+            <ScrollView>
+                <View style={ styles.container }>
+                    <Text>Home</Text>
+                    {
+                        <Text>{ JSON.stringify(data) }</Text>
+                    }
+                </View>
+            </ScrollView>
+        </SafeAreaView>
+    );
 }
